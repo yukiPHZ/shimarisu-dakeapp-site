@@ -202,8 +202,7 @@ h2 {
 
 .flow-list,
 .sense-list,
-.action-list,
-.position-stack {
+.action-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -252,8 +251,7 @@ h2 {
   padding: 16px 18px;
 }
 
-.action-grid,
-.position-grid {
+.action-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 320px;
   gap: 42px;
@@ -271,51 +269,20 @@ h2 {
   font-weight: 700;
 }
 
-.position-stack {
+.why-body {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 42px;
+  align-items: start;
+  max-width: 880px;
 }
 
-.position-stack li {
-  position: relative;
-  min-height: 78px;
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  place-items: center;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.78);
-  padding: 14px;
-  font-weight: 800;
-  text-align: center;
-}
-
-.position-stack span,
-.position-stack small {
-  display: block;
-}
-
-.position-stack small {
-  margin-top: 2px;
-  color: var(--muted);
-  font-size: 0.78rem;
+.why-note {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  border-left: 3px solid var(--accent);
+  color: var(--ink);
   font-weight: 700;
-}
-
-.position-stack .position-parent {
-  grid-column: 1 / -1;
-}
-
-.position-stack li:nth-child(2) {
-  background: var(--accent-soft);
-  border-color: #efcfbd;
-}
-
-.position-stack li:nth-child(3) {
-  background: var(--green-soft);
-  border-color: #bcdace;
 }
 
 .site-footer {
@@ -365,7 +332,7 @@ h2 {
   .flow-list,
   .sense-list,
   .action-grid,
-  .position-grid {
+  .why-body {
     grid-template-columns: 1fr;
   }
 
@@ -424,14 +391,6 @@ h2 {
   .hero-media {
     width: min(100%, 176px);
     justify-self: center;
-  }
-
-  .position-stack {
-    grid-template-columns: 1fr;
-  }
-
-  .position-stack .position-parent {
-    grid-column: auto;
   }
 
   .hero-card {
