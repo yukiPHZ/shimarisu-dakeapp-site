@@ -273,19 +273,39 @@ h2 {
 
 .position-stack {
   display: grid;
-  gap: 24px;
-  counter-reset: position;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
 }
 
 .position-stack li {
   position: relative;
-  min-height: 58px;
+  min-height: 78px;
   display: grid;
+  align-content: center;
+  justify-items: center;
   place-items: center;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.78);
+  padding: 14px;
   font-weight: 800;
+  text-align: center;
+}
+
+.position-stack span,
+.position-stack small {
+  display: block;
+}
+
+.position-stack small {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.position-stack .position-parent {
+  grid-column: 1 / -1;
 }
 
 .position-stack li:nth-child(2) {
@@ -293,14 +313,9 @@ h2 {
   border-color: #efcfbd;
 }
 
-.position-stack li:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -24px;
-  width: 1px;
-  height: 24px;
-  background: var(--line);
+.position-stack li:nth-child(3) {
+  background: var(--green-soft);
+  border-color: #bcdace;
 }
 
 .site-footer {
@@ -409,6 +424,14 @@ h2 {
   .hero-media {
     width: min(100%, 176px);
     justify-self: center;
+  }
+
+  .position-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .position-stack .position-parent {
+    grid-column: auto;
   }
 
   .hero-card {
