@@ -23,3 +23,24 @@ SHIMARISU brand site for the DAKE ecosystem.
 - Build command: empty
 - Build output directory: `public`
 - Planned domain: `https://shimarisu.dakeapp.com`
+
+
+## DAKE_WEB_META
+
+```json
+{
+    "site_key":  "shimarisu-dakeapp-site",
+    "display_name":  "SHIMARISU",
+    "repo_name":  "shimarisu-dakeapp-site",
+    "domain":  "shimarisu.dakeapp.com",
+    "cloudflare_project":  "shimarisu-dakeapp-site",
+    "site_type":  "static",
+    "has_functions":  false,
+    "has_openai_api":  false,
+    "health_url":  "",
+    "production_url":  "https://shimarisu.dakeapp.com",
+    "status":  "active",
+    "category":  "SHIMARISU",
+    "show_on_dashboard":  true
+}
+```
