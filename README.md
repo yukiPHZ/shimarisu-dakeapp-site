@@ -24,6 +24,13 @@ SHIMARISU brand site for the DAKE ecosystem.
 - Build output directory: `public`
 - Planned domain: `https://shimarisu.dakeapp.com`
 
+## BOOTH
+
+- BOOTH URL: `https://peakheadz.booth.pm/items/8449321`
+- Source: `C:\Users\yukiz\devlop\SHIMARISU\booth_ready\booth_product.txt`
+- Use wording around "BOOTHで購入・応援する".
+- Keep this as a quiet support / purchase link, not a sales LP.
+
 
 ## DAKE_WEB_META
 
