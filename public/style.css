@@ -134,6 +134,12 @@ h2 {
   margin-top: 34px;
 }
 
+.download-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .button {
   min-height: 46px;
   display: inline-flex;
@@ -386,6 +392,10 @@ h2 {
 
   .button {
     width: 100%;
+  }
+
+  .download-note {
+    font-size: 0.86rem;
   }
 
   .hero-media {
