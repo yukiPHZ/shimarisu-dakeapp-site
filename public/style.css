@@ -85,6 +85,28 @@ a {
   padding: 38px 0 70px;
 }
 
+.about-hero {
+  min-height: auto;
+  grid-template-columns: minmax(0, 760px);
+  padding-top: 92px;
+  padding-bottom: 84px;
+}
+
+.about-copy {
+  max-width: 760px;
+}
+
+.about-copy p {
+  margin-bottom: 24px;
+}
+
+.about-back {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .eyebrow,
 .section-label {
   margin: 0;
