@@ -22,7 +22,14 @@ SHIMARISU brand site for the DAKE ecosystem.
 - Project name: `shimarisu-dakeapp-site`
 - Build command: empty
 - Build output directory: `public`
-- Planned domain: `https://shimarisu.dakeapp.com`
+- Production domain: `https://shimarisu.dakeapp.com`
+
+## Current Product State
+
+- 「しまりすくん 実務判断Pack」は販売中。
+- このサイトをSHIMARISUの正規商品・ブランドページとする。
+- 無料/共有用PackダウンロードとBOOTHの正式購入・応援導線を同じページから案内する。
+- 将来の「不動産売買・契約決済実務パック」は別商品ラインで、現時点では未実装・未販売。
 
 ## BOOTH
 
